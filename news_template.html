@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новости</title>
+        <style>
+            body {
+                background-color: #F8EEE7;
+                font-family: 'Palatino', Helvetica;
+            }
+            .news-tile {
+                display: inline-block;
+                width: calc(100% /  5);
+                box-sizing: border-box;
+                padding:  10px;
+                font-size:  14px;
+                vertical-align: top;
+                background-color: #FDFAF8;
+                border:  1px solid #ccc;
+                margin-bottom:  10px;
+                border-radius:  10px; /* Rounded corners */
+            }
+            .news-tile h3 {
+                margin:  0;
+            }
+            .news-tile p {
+                margin:  0;
+            }
+            .news-tile a {
+                color: #000;
+                text-decoration: none;
+            }
+            .news-tile a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head><body>
+        <h1>Новости за сутки</h1>
+        <div class="news-container">
+            {% for item in news_items %}
+                <div class="news-tile">
+                    <p>{{ item[3] }}</p> <!-- Source -->
+                    <h3>{{ item[2]|truncate(170) }}</h3> <!-- Text -->
+                    <p><a href="{{ item[1] }}">Ссылка</a></p> <!-- URL -->
+                    <p>Добавлено: {{ item[4] }}</p> <!-- Date -->
+                </div>
+            {% endfor %}
+        </div>
+        <button onclick="location.reload();">Reload</button>
+    </body></html>
