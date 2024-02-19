@@ -1,12 +1,12 @@
 # bobonewsparser
-Feel free to receive financial news from Russian market in some clicks. And some waiting. And some libs installed.
-
-Download the latest ChromeDriver from here https://googlechromelabs.github.io/chrome-for-testing/#stable
+Feel free to receive financial news from the Russian market with some clicks. And some waiting. And some libs installed.
 
 Make sure all files and the Chromedriver are in the same folder. Install necessary libraries.
 
-The siteconfig file contains site configs. Parser reads the config file and starts the browser in NON-headless mode. JS is allowed!
+The siteconfig.py file contains site configs. The parser reads the config file and starts the browser in NON-headless mode. JS is allowed!
 
-Websites scraping is performed in a gentle way.
+Website scraping is made in a gentle way. The generator addresses the database and provides the HTML file with the news parsed within the last 24 hours.
 
-Generator addresses the database and provides the HTML file with the news parsed within the last 24 hours. 
+After the first run, you will see many unnecessary links, which is fine. You need to run the parser in 24 hours to see these gone.
+
+Automatization is up to you, sorry. 
