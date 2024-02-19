@@ -293,5 +293,5 @@ site_presets = [
     'filter_pattern': r'^https://www\.kommersant\.ru/doc/.*(?<!\?from=vertical_lenta)$',
     'update_frequency': '7-15'
     }
-    # More presets...
+    # пресеты сюда
 ]
