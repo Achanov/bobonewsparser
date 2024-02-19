@@ -1,7 +1,7 @@
 # bobonewsparser
 Feel free to receive financial news from the Russian market with some clicks. And some waiting. And some libs installed.
 
-Make sure all files and the Chromedriver are in the same folder. Install necessary libraries.
+Make sure all files and the Chromedriver are in the same folder. Install necessary libraries, these are jinja2 and selenium.
 
 The siteconfig.py file contains site configs. The parser reads the config file and starts the browser in NON-headless mode. JS is allowed!
 
