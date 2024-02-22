@@ -9,3 +9,5 @@ Website scraping is made in a gentle way. The generator addresses the database a
 After the first run, you will see many unnecessary links, which is fine. You need to run the parser in 24 hours to see these gone.
 
 Automatization is up to you, sorry.
+
+Many thanks to PHIND helping me to solving my struggles and guiding me well.
