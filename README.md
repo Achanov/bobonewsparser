@@ -10,4 +10,4 @@ After the first run, you will see many unnecessary links, which is fine. You nee
 
 Automatization is up to you, sorry.
 
-Many thanks to PHIND helping me to solving my struggles and guiding me well.
+Many thanks to PHIND for solving my struggles and guiding me well.
